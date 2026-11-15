@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# files the scripts generate when run
+/sales.csv
+/sales.xlsx
+/sales.json
+/Cleaned_*.csv
+/City_Air_Quality.csv
+/Retail_Sales_Data.csv
+/Stock_Prices.csv
+uber.csv
