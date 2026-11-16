@@ -31,7 +31,7 @@ CITY = "Pune"
 # Forecast endpoint: one reading every 3 hours for 5 days.
 URL = "https://api.openweathermap.org/data/2.5/forecast"
 
-# --- Step 2: Call the API (with error handling + fallback) ---
+# --- Step 2: Call the API 9034ae03cc8ff3d89747ff77249dc9a8(with error handling + fallback) ---
 data = {}  # stays empty if the call fails
 try:
     # timeout=10 stops the script hanging if the server never answers.
