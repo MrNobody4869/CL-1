@@ -24,6 +24,8 @@ import requests
 # --- Step 1: Configuration ---
 # The API key comes from an environment variable, never from the code.
 API_KEY = os.getenv("OPENWEATHER_API_KEY", "")
+# Don't have the environment variable set? Add your own OpenWeatherMap key on the line below:
+# API_KEY = "paste_your_key_here"
 # Change the city name here to get another city's forecast.
 CITY = "Pune"
 # Forecast endpoint: one reading every 3 hours for 5 days.
