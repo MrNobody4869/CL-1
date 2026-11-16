@@ -4,7 +4,7 @@ Assignment 2 : Interacting with Web APIs - Weather data from OpenWeatherMap
 INSTRUCTIONS
  1. Install:  pip install pandas numpy matplotlib requests
  2. API key : register free at https://openweathermap.org/api , copy the key, then set it
-              (or use one of the ready keys listed in Step 1):
+              (do NOT hard-code or share it):
                  Windows PowerShell :  $env:OPENWEATHER_API_KEY="your_key"
                  Linux / Mac        :  export OPENWEATHER_API_KEY=your_key
               New keys take ~1-2 hours to activate. Without a working key, or offline,
@@ -24,14 +24,6 @@ import requests
 # --- Step 1: Configuration ---
 # The API key comes from an environment variable, never from the code.
 API_KEY = os.getenv("OPENWEATHER_API_KEY", "")
-# No key of your own? Use ANY ONE of these keys: uncomment the line for the one you pick.
-# If one gives HTTP 401 / "Invalid API key", just try the next one.
-# API_KEY = "9034ae03cc8ff3d89747ff77249dc9a8"
-# API_KEY = "413d8b2b530ab0bef69039b4a45cf6de"
-# API_KEY = "86fafb82034471d826b10b5c3729111c"
-# API_KEY = "3448aa5df6d8e1b759a590e377d2c6d9"
-# API_KEY = "ca89ee0592c5435da39a508b94fae996"
-# API_KEY = "99e8737160a1ea104fdfe64cb9cd6af9"
 # Change the city name here to get another city's forecast.
 CITY = "Pune"
 # Forecast endpoint: one reading every 3 hours for 5 days.
